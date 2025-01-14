@@ -1,0 +1,16 @@
+<nav id="hamburgerMenu" class="font-libre text-white bg-burgundy pt-32 pb-4 w-full z-10 absolute -translate-y-80 transition-transform duration-500" style="box-shadow: 0 1px 20px 0px rgba(0, 0, 0, 0.695);">
+    <ul class="flex flex-col gap-2 list-none text-2xl text-center uppercase">
+        <li class="w-full"><a class="hover:underline block" href="/">Home</a></li>
+        <li><a class="hover:underline block" href="/about">About Us</a></li>
+
+        <li><a class="hover:underline block" data-dropdown-toggle="galleryDropdownMbl" data-dropdown-delay=50 data-dropdown-trigger="hover">Gallery</a></li>
+        <div id="galleryDropdownMbl" class="z-10 hidden bg-gold px-6 pb-2 text-xl">
+          <ul aria-labelledby="dropdownHoverButton">
+            {{ range (where .Site.RegularPages.ByTitle "Section" "gallery" ) }}
+            <li class="mt-2"><a class="hover:underline block" href="{{ .Permalink }}">{{ .Params.title | humanize | title }}</a></li>
+          {{ end }}
+          </ul>
+        </div>
+        <li><a class="hover:underline block" href="/reviews">Reviews</a></li>
+    </ul>
+  </nav>

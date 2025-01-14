@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>{{ or .Site.Title }}{{ if ne .Kind "home" }} | {{ .Title }}{{ end }}</title>
+    {{ with resources.Get "style.scss" }}
+    {{ $opts := dict "transpiler" "libsass" "targetPath" "css/style.css" }}
+    {{ with . | toCSS $opts }}
+      {{ if hugo.IsDevelopment }}
+        {{ partial "partials/devTW.html" }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}">
+      {{ else }}
+        {{ with . | postCSS | minify | fingerprint }}
+          <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    {{ end }}
+
+  </head>
+  <body class="bg-pageBg radGrad text-offWhite font-montserrat">
+    {{ block "header" . }}
+    {{ partial "partials/hamburger.html" . }}
+    <header class="bg-none px-5 py-5 relative">
+        <div class="flex flex-col container mx-auto px-4">
+          <div class="flex flex-wrap flex-row flex-shrink justify-between w-full place-items-center">
+            <a class="z-20 text-5xl font-montserrat text-accentOrange" href="/">S<span class="text-accentBlue">W</span>S</a>
+            <label for="burger" class="burger z-20 md:hidden">
+              <input type="checkbox" class="burger" id="burger" onclick="document.getElementById('hamburgerMenu').classList.toggle('-translate-y-80')">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+
+            <nav id="mainNav" class="font-montserrat text-offWhite z-10 self-center justify-self-center hidden w-fit md:inline">
+              <ul class="flex flex-row gap-3 list-none text-2xl text-center uppercase font-light">
+                <li><a class="hover:underline" href="/">Home</a></li>
+                <li><a class="hover:underline" href="/about">About</a></li>
+                <li><a class="hover:underline" href="/about">Contact</a></li>
+                <li><a class="hover:underline" href="/reviews">Portfolio</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+    </header>
+    {{ end }}
+
+    {{ block "main" . }}
+    {{ end }}
+    
+    {{ block "footer" . }}
+    <footer class="px-5 pt-14 pb-4 text-center">
+        <p>&copy; 2025 Slade Web Solutions. All rights reserved.</p>
+    </footer>
+    {{ end }}
+    {{ with resources.Get "flowbite.min.js" }}
+    <script src="{{ .RelPermalink }}"></script>
+    {{ end }}
+  </body>
+</html>

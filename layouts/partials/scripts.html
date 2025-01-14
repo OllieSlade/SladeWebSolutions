@@ -1,0 +1,23 @@
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var image = [];
+        {{ range .Resources.ByType "image" }}
+        {{ $image := . }}
+        {{ with .Fit (printf "%dx%d webp q95" .Width .Height) }}
+        image.push("{{ .RelPermalink }}");
+        {{ end }}
+        {{ end }}
+        var nextImage = 0;
+        image.sort(() => Math.random() - 0.5);
+        slideshow();
+        
+        function slideshow() {
+            let element = document.getElementById("backgroundDiv");
+            element.style.backgroundImage = "url('" + image[nextImage] + "')";
+            setTimeout(function() {
+                nextImage = (nextImage + 1) % image.length;
+                slideshow();
+            }, 3500);
+        }
+    });
+</script>
