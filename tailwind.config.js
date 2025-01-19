@@ -6,13 +6,15 @@ module.exports = {
       colors: {
         offWhite: '#D9D9D9',
         accentBlue: '#23B99A',
+        accentBlueHC: '#70E6CB',
         accentOrange: '#E74C3B',
-        pageBg: '#1A1F22',
-        bgOrange: "#C83828",
+        pageBg: '#0d0f17',
+        lightBlack: '#08090d', 
+        bgOrange: "#b03325",
       }
     },
     fontFamily: {
-      montserrat: ['Montserrat', 'serif']
+      montserrat: ['Montserrat', 'sans-serif']
     }
   },
   plugins: [

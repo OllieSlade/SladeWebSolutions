@@ -28,10 +28,12 @@
   <body class="bg-pageBg radGrad text-offWhite font-montserrat">
     {{ block "header" . }}
     {{ partial "partials/hamburger.html" . }}
-    <header class="bg-none px-5 py-5 relative">
+    <header class="bg-none px-5 py-7 relative">
         <div class="flex flex-col container mx-auto px-4">
           <div class="flex flex-wrap flex-row flex-shrink justify-between w-full place-items-center">
-            <a class="z-20 text-5xl font-montserrat text-accentOrange" href="/">S<span class="text-accentBlue">W</span>S</a>
+            {{ with resources.Get "logo.png" }}
+            <img src="{{ .RelPermalink }}" class="w-64" w="603" h="185">
+            {{ end }}
             <label for="burger" class="burger z-20 md:hidden">
               <input type="checkbox" class="burger" id="burger" onclick="document.getElementById('hamburgerMenu').classList.toggle('-translate-y-80')">
               <span></span>
@@ -40,11 +42,11 @@
             </label>
 
             <nav id="mainNav" class="font-montserrat text-offWhite z-10 self-center justify-self-center hidden w-fit md:inline">
-              <ul class="flex flex-row gap-3 list-none text-2xl text-center uppercase font-light">
+              <ul class="flex flex-row gap-3 list-none text-2xl text-center uppercase">
                 <li><a class="hover:underline" href="/">Home</a></li>
-                <li><a class="hover:underline" href="/about">About</a></li>
-                <li><a class="hover:underline" href="/about">Contact</a></li>
-                <li><a class="hover:underline" href="/reviews">Portfolio</a></li>
+                <!-- <li><a class="hover:underline" href="/about">About</a></li> -->
+                <li><a class="hover:underline" href="/contact">Contact</a></li>
+                <!-- <li><a class="hover:underline" href="/reviews">Portfolio</a></li> -->
               </ul>
             </nav>
           </div>
@@ -56,8 +58,11 @@
     {{ end }}
     
     {{ block "footer" . }}
-    <footer class="px-5 pt-14 pb-4 text-center">
-        <p>&copy; 2025 Slade Web Solutions. All rights reserved.</p>
+    <footer class="px-4 mx-auto container pt-14 pb-8 font-montserrat">
+      <div class="grid grid-flow-col justify-between">
+        <a class="text-5xl text-accentOrange inline self-center" href="/">S<span class="text-accentBlue">W</span>S</a>
+        <p class="text-right inline text-xl self-center">&copy; 2025 Slade Web Solutions. All rights reserved.</p>
+      </div>
     </footer>
     {{ end }}
     {{ with resources.Get "flowbite.min.js" }}
