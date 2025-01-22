@@ -22,7 +22,7 @@
     {{ end }}
     {{ end }}
 
-    <script src="https://kit.fontawesome.com/8a8a19b4df.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8a8a19b4df.js" async crossorigin="anonymous"></script>
 
 
   </head>
@@ -67,7 +67,7 @@
     </footer>
     {{ end }}
     {{ with resources.Get "flowbite.min.js" }}
-    <script src="{{ .RelPermalink }}"></script>
+    <script src="{{ .RelPermalink }}" async></script>
     {{ end }}
   </body>
 </html>
