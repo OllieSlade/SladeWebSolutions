@@ -62,7 +62,9 @@
 				<a class="bg-bgOrange uppercase font-montserrat self-center md:self-end text-white text-xl md:text-2xl font-semibold w-fit py-3 px-14 transition-all duration-100 hover:border-none border-r-[6] border-b-[6] border-black" href="/contact">Enquire Today</a>
 			</div>
 			{{ with .Resources.Get "pagespeed.png" }}
+			{{ with .Fit (printf "%dx%d webp q90" .Width .Height) }}	
 			<img class="self-center" src="{{ .RelPermalink }}" width="751" height="597" alt="Google Page Insights screenshot showing 100 performance score">
+			{{ end }}
 			{{ end }}
 		</div>
 	</div>
