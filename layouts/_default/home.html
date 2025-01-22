@@ -10,7 +10,7 @@
 	</div>
 
 	<div class="container mx-auto px-5">
-		<div class="mt-36 md:w-8/12 grid grid-flow-row justify-self-center text-left">
+		<div class="mt-24 md:w-8/12 grid grid-flow-row justify-self-center text-left">
 			<h2 class="text-5xl md:text-center font-semibold">Why go <span class="text-accentOrange font-bold">Bespoke?</span></h2>
 			<p class="text-2xl mt-6">Because your business is unique, and your website should be too. <span class="text-accentBlue font-medium">Make your business stand out from your competitors</span> who all have websites that look the same. We build your website from the ground up, just for you.</p>
 			<p class="text-2xl mt-6">Bespoke sites are <span class="text-accentBlue font-medium">faster to load</span>, especially compared to WordPress sites, this is due to far less “fat” that has to be loaded with the rest of the website. Improving your websites visibility and customer satisfaction.</p>
@@ -27,15 +27,7 @@
 	<div class="container mx-auto px-5">
 		<div class="mt-20 md:mt-32">
 			<h2 class="text-5xl text-center pb-8 font-semibold">Customer <span class="text-accentOrange font-bold">Testimonials</span></h2>
-			<div class="grid auto-rows-auto gap-4" style="grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));">
-				<div class="bg-black text-offWhite py-8 px-8">
-					<p class="text-xl font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-					<p class="font-semibold text-2xl uppercase pt-3">John D.</p>
-				</div>
-				<div class="bg-black text-offWhite py-8 px-8">
-					<p class="text-xl font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-					<p class="font-semibold text-2xl uppercase pt-3">John D.</p>
-				</div>
+			<div class="grid auto-rows-auto gap-4 place-content-center grid-cols-1">
 				<div class="bg-black text-offWhite py-8 px-8">
 					<p class="text-xl font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 					<p class="font-semibold text-2xl uppercase pt-3">John D.</p>
@@ -63,13 +55,14 @@
 				<h2 class="text-5xl pb-6 font-semibold">Our Websites <span class="text-accentOrange font-bold">Perform</span></h2>
 				<p class="">Website load time isn't something people offen think about, but it plays a huge role on the web. A slow loading site can result in lower rankings on search engines and less site conversions</p>
 				<p class="pt-3">Test your website with <a class="underline text-accentBlue font-light hover:font-medium" target="_blank" href="https://pagespeed.web.dev">Google PageSpeed Insights</a> and see how it scores right now.</p>
-				<div class="font-light pt-6">
+				<div class="font-light pt-6 pb-4">
 					<div class="pb-4 grid grid-flow-col justify-self-start"><i class="fa-solid fa-globe text-accentBlue text-3xl pe-6 self-center"></i> <p>We aim for between 95 and 100 Performance score on Google</p></div>
 					<div class="pb-4 grid grid-flow-col justify-self-start"><i class="fa-solid fa-globe text-accentBlue text-3xl pe-6 self-center"></i> <p class="pt-2">Faster websites improves SEO and Google Ads Performance</p></div>
 				</div>
+				<a class="bg-bgOrange uppercase font-montserrat self-center md:self-end text-white text-xl md:text-2xl font-semibold w-fit py-3 px-14 transition-all duration-100 hover:border-none border-r-[6] border-b-[6] border-black" href="/contact">Enquire Today</a>
 			</div>
 			{{ with .Resources.Get "pagespeed.png" }}
-			<img src="{{ .RelPermalink }}" w="751" h="597">
+			<img class="self-center" src="{{ .RelPermalink }}" width="751" height="597" alt="Google Page Insights screenshot showing 100 performance score">
 			{{ end }}
 		</div>
 	</div>
@@ -82,7 +75,7 @@
 						<div class="rounded-lg overflow-hidden h-auto bg-white dark:bg-gray-800">
 							{{ with .Resources.Get "lawsonsbespokedecorating.png" }}
 								{{ with .Fit (printf "%dx%d webp q90" .Width .Height) }}								
-								<img src="{{ .RelPermalink }}" class="hidden dark:block h-auto w-full rounded-lg" alt="">
+								<img src="{{ .RelPermalink }}" width="854" height="474" class="block w-full rounded-lg" alt="Prior website I made, featuring a Burgundy and Gold colour scheme and background carosel">
 								{{ end }}
 							{{ end }}
 						</div>
@@ -96,9 +89,9 @@
 				<div class="text-offWhite py-8 px-8 text-center">
 					<div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl max-w-[301px]  md:max-w-[512px]">
 						<div class="rounded-lg overflow-hidden bg-white dark:bg-gray-800">
-							{{ with .Resources.Get "lawsonsbespokedecorating.png" }}
+							{{ with .Resources.Get "SAMPLE.png" }}
 								{{ with .Fit (printf "%dx%d webp q90" .Width .Height) }}								
-								<img src="{{ .RelPermalink }}" class="hidden dark:block w-full rounded-lg" alt="">
+								<img src="{{ .RelPermalink }}"  width=822 height=474 class="block w-full rounded-lg" alt="Blank image saying 'your site here'">
 								{{ end }}
 							{{ end }}
 						</div>

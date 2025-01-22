@@ -32,7 +32,7 @@
         <div class="container mx-auto">
           <div class="flex flex-wrap flex-row flex-shrink justify-between w-full place-items-center">
             {{ with resources.Get "logo.png" }}
-            <a href="/"><img src="{{ .RelPermalink }}" class="w-64" w="603" h="185"></a>
+            <a href="/"><img src="{{ .RelPermalink }}" class="w-64" width="603" height="185" alt="Orange and blue 3D square logo"></a>
             {{ end }}
             <label for="burger" class="burger z-20 md:hidden">
               <input type="checkbox" class="burger" id="burger" onclick="document.getElementById('hamburgerMenu').classList.toggle('-translate-y-80')">
