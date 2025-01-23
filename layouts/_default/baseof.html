@@ -64,7 +64,7 @@
     </footer>
     {{ end }}
     {{ with resources.Get "flowbite.min.js" }}
-    <script src="{{ .RelPermalink }}"></script>
+    <script src="{{ .RelPermalink }}" async></script>
     {{ end }}
   </body>
 </html>
