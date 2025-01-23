@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="description" content="Bespoke local website design and development for small businesses and individuals. Competitively priced super responsive websites, tailored exactly to your needs.">
+
+    <link rel="preload" href="/fonts/Montserrat.woff2" as="font" crossorigin="anonymous" />
+
     <title>{{ or .Site.Title }}{{ if ne .Kind "home" }} | {{ .Title }}{{ end }}</title>
     {{ with resources.Get "style.scss" }}
     {{ $opts := dict "transpiler" "libsass" "targetPath" "css/style.css" }}
@@ -20,9 +21,6 @@
       {{ end }}
     {{ end }}
     {{ end }}
-
-    <script src="https://kit.fontawesome.com/8a8a19b4df.js" crossorigin="anonymous"></script>
-
 
   </head>
   <body class="bg-pageBg radGrad text-offWhite font-montserrat">
