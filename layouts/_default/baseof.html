@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,15 +22,12 @@
     {{ end }}
     {{ end }}
 
-    <script src="https://kit.fontawesome.com/8a8a19b4df.js" async crossorigin="anonymous"></script>
-
-
   </head>
-  <body class="bg-pageBg radGrad text-offWhite font-montserrat">
+  <body class=" dark:bg-pageBg bg-white radGrad dark:text-offWhite text-black  font-montserrat">
     {{ block "header" . }}
     {{ partial "partials/hamburger.html" . }}
-    <header class="bg-none px-5 z-20 py-7 relative">
-        <div class="container mx-auto">
+    <header class="bg-none z-20 py-7 relative dark:bg-transparent bg-offWhite">
+        <div class="container mx-auto px-5">
           <div class="flex flex-wrap flex-row flex-shrink justify-between w-full place-items-center">
             {{ with resources.Get "logo.png" }}
             <a href="/"><img src="{{ .RelPermalink }}" class="w-64" width="603" height="185" alt="Orange and blue 3D square logo"></a>
@@ -42,7 +39,7 @@
               <span></span>
             </label>
 
-            <nav id="mainNav" class="font-montserrat text-offWhite z-10 self-center justify-self-center hidden w-fit md:inline">
+            <nav id="mainNav" class="font-montserrat z-10 self-center justify-self-center hidden w-fit md:inline">
               <ul class="flex flex-row gap-3 list-none text-2xl text-center uppercase">
                 <li><a class="hover:underline" href="/">Home</a></li>
                 <!-- <li><a class="hover:underline" href="/about">About</a></li> -->
@@ -59,7 +56,7 @@
     {{ end }}
     
     {{ block "footer" . }}
-    <footer class="px-5 mx-auto container pt-14 pb-8 font-montserrat">
+    <footer class="px-5 mx-auto container pt-32 pb-8 font-montserrat">
       <div class="grid grid-flow-col justify-between">
         <a class="text-5xl text-accentOrange inline self-center" href="/">S<span class="text-accentBlue">W</span>S</a>
         <p class="text-right inline text-xl self-center">&copy; 2025 Slade Web Solutions. All rights reserved.</p>
