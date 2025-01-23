@@ -1,11 +1,11 @@
 {{ define "main" }}
-<main class="">
+<main>
 	<div class="container mx-auto px-5">
 		<div class="mt-8 md:mt-28 flex flex-col">
 			<p class="text-center md:text-left font-light text-md md:text-2xl uppercase pb-1">No Wordpress, No Squarespace, 100% hand coded</p>
-			<h1 class="text-center md:text-left text-5xl md:text-7xl md:w-9/12 font-semibold">Websites from the ground up, because <span class=" text-accentOrange font-bold">your business deserves it.</span></h1>
-			<p class="text-center md:text-right md:w-9/12 text-2xl md:text-4xl right-0 mt-16 md:mt-24 self-end mb-4 md:mb-7">Locally made bespoke websites with <span class="text-accentBlue font-medium">superior page rankings</span> at very competitive rates. Give your business that unique edge.</span></p>
-			<a class="bg-bgOrange uppercase font-montserrat self-center md:self-end text-white text-xl md:text-2xl font-semibold w-fit py-3 px-14 transition-all duration-100 hover:border-none border-r-[6] border-b-[6] border-black" href="/contact">Enquire Today</a>
+			<h1 class="text-center md:text-left text-5xl md:text-7xl md:w-9/12 font-semibold ">Websites from the ground up, because <span class=" text-accentOrange font-bold">your business deserves it.</span></h1>
+			<p class="text-center md:text-right md:w-9/12 text-2xl md:text-4xl right-0 mt-16 md:mt-24 self-end mb-4">Locally made bespoke websites with <span class="text-accentBlue font-medium">superior page rankings</span> at very competitive rates. Give your business that unique edge.</span></p>
+			<a class="button self-center md:self-end text-xl md:text-2xl" href="/contact">Enquire Today</a>
 		</div>
 	</div>
 
@@ -39,7 +39,7 @@
 	<div class="container mx-auto px-5">
 		<div class="mt-20 md:mt-32 grid grid-flow-row">
 			<h2 class="text-5xl text-center pb-8 font-semibold">Why <span class="text-accentOrange font-bold">Us?</span></h2>
-			<div class="md:w-10/12 justify-self-center text-offWhite text-xl md:text-2xl">
+			<div class="md:w-10/12 justify-self-center text-xl md:text-2xl">
 				<div class="pb-4 grid grid-flow-col justify-self-start"><img class="w-9 me-6 self-center" src="svg/globe-solid.svg" alt=""> <p>Whatever website you request, we will do our best to make it as <span class="text-accentBlue font-medium">responsive</span> as possible. That means; no loading screens, no unnecessary waiting, more customers.</p></div>
 				<div class="pb-4 grid grid-flow-col justify-self-start"><img class="w-9 me-6 self-center" src="svg/globe-solid.svg" alt=""> <p>We can provide <span class="text-accentBlue font-medium">databases</span> (and other more advanced backend features), both SQL and Non-SQL options, so if you need super-fast data retrieval of information, we can provide that for you.</p></div>
 				<div class="pb-4 grid grid-flow-col justify-self-start"><img class="w-9 me-6 self-center" src="svg/globe-solid.svg" alt=""> <p>Still want to be able to <span class="text-accentBlue font-medium">make minor edits</span> to the website <span class="text-accentBlue font-medium">yourself</span> (As you may have been used to with WordPress)? No Problem! We can provide a “Headless Content Management System” for you to modify articles, products, images, even full pages!</p></div>
@@ -49,17 +49,17 @@
 		</div>
 	</div>
 
-	<div class="bg-lightBlack px-5 mt-20 md:mt-32 py-12">
+	<div class="dark:bg-lightBlack bg-gray-300 px-5 mt-20 md:mt-32 py-12">
 		<div class="container mx-auto  grid grid-cols-1 md:grid-cols-2 gap-14">
 			<div class=" text-2xl self-center">
 				<h2 class="text-5xl pb-6 font-semibold">Our Websites <span class="text-accentOrange font-bold">Perform</span></h2>
 				<p class="">Website load time isn't something people offen think about, but it plays a huge role on the web. A slow loading site can result in lower rankings on search engines and less site conversions</p>
 				<p class="pt-3">Test your website with <a class="underline text-accentBlue font-light hover:font-medium" target="_blank" href="https://pagespeed.web.dev">Google PageSpeed Insights</a> and see how it scores right now.</p>
-				<div class="font-light pt-6 pb-4">
+				<div class="font-light pt-6">
 					<div class="pb-4 grid grid-flow-col justify-self-start"><img class="w-9 me-6 self-center" src="svg/globe-solid.svg" alt=""> <p>We aim for between 95 and 100 Performance score on Google</p></div>
 					<div class="pb-4 grid grid-flow-col justify-self-start"><img class="w-9 me-6 self-center" src="svg/globe-solid.svg" alt=""> <p class="pt-2">Faster websites improves SEO and Google Ads Performance</p></div>
 				</div>
-				<a class="bg-bgOrange uppercase font-montserrat self-center md:self-end text-white text-xl md:text-2xl font-semibold w-fit py-3 px-14 transition-all duration-100 hover:border-none border-r-[6] border-b-[6] border-black" href="/contact">Enquire Today</a>
+				<a class="button text-xl" href="/contact">Enquire Today</a>
 			</div>
 			{{ with .Resources.Get "pagespeed.png" }}
 			{{ with .Fit (printf "%dx%d webp q90" .Width .Height) }}	
@@ -72,7 +72,7 @@
 		<div class="container mx-auto px-5 mt-20 md:mt-32 ">
 			<h2 class="text-5xl pb-6 font-semibold text-center">Our Most <span class="text-accentOrange font-bold">Recent Projects</span></h2>
 			<div class="grid auto-rows-auto gap-4 grid-cols-1 md:grid-cols-2">
-				<div class="text-offWhite py-8 px-8 text-center max-w-full">
+				<div class="py-8 px-8 text-center max-w-full">
 					<div class="relative h-auto mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl max-w-[301px] md:max-w-[512px]">
 						<div class="rounded-lg overflow-hidden h-auto bg-white dark:bg-gray-800">
 							{{ with .Resources.Get "lawsonsbespokedecorating.png" }}
@@ -86,9 +86,9 @@
 						<div class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800"></div>
 					</div>
 					<p class="font-semibold text-2xl uppercase pt-3 pb-6">Lawson's Bespoke Decorating</p>
-					<a class="bg-bgOrange uppercase font-montserrat self-end text-white text-xl font-semibold w-fit py-3 px-14 transition-all duration-100 hover:border-none border-r-[6] border-b-[6] border-black" href="/about#contact">Visit Website</a>
+					<a class="button text-xl" target="_blank" href="https://lawsonsbespokedecorating.com">Visit Website</a>
 				</div>
-				<div class="text-offWhite py-8 px-8 text-center">
+				<div class="py-8 px-8 text-center">
 					<div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl max-w-[301px]  md:max-w-[512px]">
 						<div class="rounded-lg overflow-hidden bg-white dark:bg-gray-800">
 							{{ with .Resources.Get "SAMPLE.png" }}
@@ -102,7 +102,7 @@
 						<div class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800"></div>
 					</div>
 					<p class="font-semibold text-2xl uppercase pt-3 pb-6">This could be your site!</p>
-					<a class="bg-bgOrange uppercase font-montserrat self-end text-white text-xl font-semibold w-fit py-3 px-14 transition-all duration-100 hover:border-none border-r-[6] border-b-[6] border-black" href="/contact">Enquire Today</a>
+					<a class="button text-xl" href="/contact">Enquire Today</a>
 				</div>
 				
 			</div>
@@ -110,7 +110,7 @@
 	</div>
 
 
-	<div class="container mx-auto px-5 mt-20 md:mt-32 mb-8">
+	<div class="container mx-auto px-5 mt-20 md:mt-32">
 		<h2 class="text-5xl pb-6 font-semibold text-center">What Services <span class="text-accentOrange font-bold">Do You Offer?</span></h2>
 		<div class="grid text-2xl gap-4 w-10/12 mx-auto text-center place-content-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3" >
 			<p class="border-accentBlue border-4 py-8 px-12 grid place-content-center">Website Design and Development</p>
