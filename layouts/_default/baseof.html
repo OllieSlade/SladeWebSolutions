@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Bespoke local website design and development for small businesses and individuals. Competitively priced super responsive websites, tailored exactly to your needs.">
 
+    <link rel="icon" href="/favicon.ico">
+
     <link rel="preload" href="/fonts/Montserrat.woff2" as="font" crossorigin="anonymous" />
 
     <title>{{ or .Site.Title }}{{ if ne .Kind "home" }} | {{ .Title }}{{ end }}</title>
@@ -30,7 +32,9 @@
         <div class="container mx-auto px-5">
           <div class="flex flex-wrap flex-row flex-shrink justify-between w-full place-items-center">
             {{ with resources.Get "logo.png" }}
+            {{ with .Fit (printf "%dx%d webp q100" .Width .Height) }}	
             <a href="/"><img src="{{ .RelPermalink }}" class="w-64" width="603" height="185" alt="Orange and blue 3D square logo"></a>
+            {{ end }}
             {{ end }}
             <label for="burger" class="burger z-20 md:hidden">
               <input type="checkbox" class="burger" id="burger" onclick="document.getElementById('hamburgerMenu').classList.toggle('-translate-y-80')">
