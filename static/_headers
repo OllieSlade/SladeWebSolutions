@@ -1,7 +1,7 @@
 /*
   X-Frame-Options: SAMEORIGIN
   X-Content-Type-Options: nosniff
-  Content-Security-Policy: default-src 'self' 'unsafe-inline' https://cloud.umami.is
+  Content-Security-Policy: default-src 'self' 'unsafe-inline' https://cloud.umami.is https://api-gateway.umami.dev/
   Referrer-Policy: no-referrer-when-downgrade
   Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()
   Strict-Transport-Security:	max-age=31536000; includeSubDomains
