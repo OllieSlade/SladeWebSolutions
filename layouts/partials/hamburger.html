@@ -1,6 +1,11 @@
-<nav id="hamburgerMenu" class="font-libre text-white bg-pageBg pt-32 pb-4 w-full z-10 absolute -translate-y-80 transition-transform duration-500" style="box-shadow: 0 1px 20px 0px rgba(0, 0, 0, 0.695);">
-    <ul class="flex flex-col gap-2 list-none text-2xl text-center uppercase">
-        <li class="w-full"><a class="hover:underline block" href="/">Home</a></li>
-        <li><a class="hover:underline block" href="/contact">Contact</a></li>
+<nav id="hamburgerMenu" class="font-libre text-white bg-pageBg fixed h-full w-full overflow-y-auto z-30 grid invisible place-content-center transition-opacity opacity-0 duration-300">
+    {{ $la := dict
+        "vendor" "tabler"
+        "name" "outline/arrow-right"
+
+    }}
+    <ul class="grid h-2/3 list-none text-5xl md:text-6xl gap-6 text-center place-items-center">
+        <li class="hover:translate-x-3 transition-transform duration-200"><a class="block" href="/">Home</a></li>
+        <li class="hover:translate-x-3 transition-transform duration-200"><a class="block" href="/contact">Contact</a></li>
     </ul>
 </nav>

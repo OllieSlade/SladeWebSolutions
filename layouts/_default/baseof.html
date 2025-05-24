@@ -42,7 +42,7 @@
   <body class=" dark:bg-pageBg bg-white radGrad dark:text-offWhite text-black  font-montserrat">
     {{ block "header" . }}
     {{ partial "partials/hamburger.html" . }}
-    <header class="bg-none z-20 py-7 relative dark:bg-transparent bg-offWhite">
+    <header class="bg-none py-7 relative dark:bg-transparent bg-offWhite">
         <div class="container mx-auto px-5">
           <div class="flex flex-wrap flex-row flex-shrink justify-between w-full place-items-center">
             {{ with resources.Get "logo.png" }}
@@ -50,8 +50,8 @@
             <a href="/"><img src="{{ .RelPermalink }}" class="w-64" width="603" height="185" alt="Orange and blue 3D square logo"></a>
             {{ end }}
             {{ end }}
-            <label for="burger" class="burger z-20 md:hidden">
-              <input type="checkbox" class="burger" id="burger" onclick="document.getElementById('hamburgerMenu').classList.toggle('-translate-y-80')">
+            <label for="burger" class="burger z-50 md:hidden">
+              <input type="checkbox" class="burger" id="burger" onclick="document.getElementById('hamburgerMenu').classList.toggle('opacity-90');document.getElementById('hamburgerMenu').classList.toggle('invisible')">
               <span></span>
               <span></span>
               <span></span>
@@ -76,10 +76,10 @@
     {{ block "footer" . }}
     <footer class="px-5 mx-auto container pt-32 pb-8 font-montserrat">
       <div class="flex flex-row justify-between">
-        <a class="text-5xl text-accentOrange inline self-center " href="/">S<span class="text-accentBlue">W</span>S</a>
-          <p class="text-right inline text-xl self-center">&copy; 2025 Slade Web Solutions. All rights reserved.</p>
-        </div>
-        <a href="mailto:enquiries@sladewebsolutions.com" class="md:text-right mt-2 md:mt-0 text-center text-lg font-light italic block">enquiries@sladewebsolutions.com</a>
+        <a class="text-4xl md:text-5xl text-accentOrange inline self-center pe-6" href="/">S<span class="text-accentBlue">W</span>S</a>
+        <p class="text-right inline text-md self-center">&copy; 2025 Slade Web Solutions. All rights reserved.</p>
+      </div>
+        <a href="mailto:enquiries@sladewebsolutions.com" class="md:text-right mt-2 md:mt-0 text-center font-light italic block">enquiries@sladewebsolutions.com</a>
     </footer>
     {{ end }}
   </body>
