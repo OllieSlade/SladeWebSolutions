@@ -57,13 +57,13 @@
 			</div>
 			{{ with .Resources.Get "headshot.jpg" }}
 			{{ with .Fit (printf "%dx%d webp q90" .Width .Height) }}	
-			<div class="relative place-self-center order-2 md:order-2 md:w-2/3">
+			<!-- <div class="relative place-self-center order-2 md:order-2 md:w-2/3">
 				<img loading="lazy" class="" src="{{ .RelPermalink }}" width="1620" height="1080" alt="Headshot of Ollie Slade, owner of Slade Web Solutions, smiling in a black quarter zip.">
 				<div class="absolute right-6 bottom-6 bg-gray-100 py-3 px-6 text-black leading-none md:text-lg rounded-md">
 					<p class="font-bold">OLLIE SLADE</p>
 					<p class="">Owner, Developer</p>
 				</div>
-			</div>
+			</div> -->
 			{{ end }}
 			{{ end }}
 		</div>
