@@ -19,6 +19,12 @@
   inherits: false;
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url('/fonts/Montserrat.woff2') format('woff2');
+  font-display: swap;
+}
+
 .active {
   font-weight: bold;
   color: var(--color-accentBlue)
@@ -183,11 +189,7 @@
   background: radial-gradient(58.33% 16.84% at 50.76% -0.14%, rgba(3, 59, 47, 0.90) 0%, rgba(13, 15, 23, 0.00) 100%), #0D0F17;
 }
 
-@font-face {
-  font-family: "Montserrat";
-  src: url('/Montserrat.woff2') format('woff2');
-  font-display: swap;
-}
+
 
 .button {
   letter-spacing: 2px;
