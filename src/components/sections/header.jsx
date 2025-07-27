@@ -7,7 +7,7 @@ export default function Header() {
         document.getElementById('hamburgerMenu').classList.toggle('invisible');
     }
     return (
-        <header className="bg-none py-7 relative dark:bg-transparent bg-offWhite">
+        <header className="bg-none py-7 relative bg-transparent ">
             <div className="container mx-auto px-5">
             <div className="flex flex-wrap flex-row flex-shrink justify-between w-full place-items-center">
                 <a href="/"><img src={Logo} className="w-64" width="603" height="185" alt="Orange and blue 3D square logo"/></a>

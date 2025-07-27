@@ -42,7 +42,7 @@ export default function Header() {
             </div>
         </div>
 
-	<div className="dark:bg-lightBlack bg-gray-300 mt-16 md:mt-28 py-14">
+	<div className="bg-lightBlack mt-16 md:mt-28 py-14">
 		<div className="container mx-auto px-5">
 			<h2 className="text-5xl pb-8 font-semibold text-center text-white">Our Most <span className="text-accentOrange font-bold">Recent Projects</span></h2>
 			<div className="grid auto-rows-auto gap-10 grid-cols-1 md:grid-cols-2 mt-4">
