@@ -8,15 +8,15 @@ export default function Pricing({ option }) {
                 <div className="">
                     <h3 className="text-3xl font-medium text-white uppercase mb-4">Upfront</h3>
                     <ul className="">
-                        <li className="pb-2 grid grid-flow-col justify-self-start"><IconCheckbox className=' me-2 self-center'/><p>Professional Custom Figma Design</p></li>
-                        <li className="pb-2 grid grid-flow-col justify-self-start"><IconCheckbox className=' me-2 self-center'/><p>A design you like or your money back</p></li>
-                        <li className="pb-2 grid grid-flow-col justify-self-start"><IconCheckbox className=' me-2 self-center'/><p>Hand Developed in the UK</p></li>
-                        <li className="pb-2 grid grid-flow-col justify-self-start"><IconCheckbox className=' me-2 self-center'/><p>Lifetime Support</p></li>
-                        <li className="pb-2 grid grid-flow-col justify-self-start"><IconCheckbox className=' me-2 self-center'/><p className="font-bold">1 year of Minor Updates</p></li>
-                        <li className="pb-2 grid grid-flow-col justify-self-start"><IconCheckbox className=' me-2 self-center'/><p>SEO Optimised proofread copywriting</p></li>
-                        <li className="pb-2 grid grid-flow-col justify-self-start"><IconCheckbox className=' me-2 self-center'/><p>£50 one time fee per page after #5</p></li>
-                        <li className="pb-2 grid grid-flow-col justify-self-start"><IconCheckbox className=' me-2 self-center'/><p>£50/mo for unlimited updates</p></li>
-                        <li className="pb-2 grid grid-flow-col justify-self-start"><IconCheckbox className=' me-2 self-center'/><p>£200 one time fee to add a content management interface</p></li>
+                        <li className="pb-2 grid grid-flow-col justify-self-start justify-items-start"><IconCheckbox className=' me-2 self-center'/><p>Professional Custom Figma Design</p></li>
+                        <li className="pb-2 grid grid-flow-col justify-self-start justify-items-start"><IconCheckbox className=' me-2 self-center'/><p>A design you like or your money back</p></li>
+                        <li className="pb-2 grid grid-flow-col justify-self-start justify-items-start"><IconCheckbox className=' me-2 self-center'/><p>Hand Developed in the UK</p></li>
+                        <li className="pb-2 grid grid-flow-col justify-self-start justify-items-start"><IconCheckbox className=' me-2 self-center'/><p>Lifetime Support</p></li>
+                        <li className="pb-2 grid grid-flow-col justify-self-start justify-items-start"><IconCheckbox className=' me-2 self-center'/><p className="font-bold">1 year of Minor Updates</p></li>
+                        <li className="pb-2 grid grid-flow-col justify-self-start justify-items-start"><IconCheckbox className=' me-2 self-center'/><p>SEO Optimised proofread copywriting</p></li>
+                        <li className="pb-2 grid grid-flow-col justify-self-start justify-items-start"><IconCheckbox className=' me-2 self-center'/><p>£50 one time fee per page after #5</p></li>
+                        <li className="pb-2 grid grid-flow-col justify-self-start justify-items-start"><IconCheckbox className=' me-2 self-center'/><p>£50/mo for unlimited updates</p></li>
+                        <li className="pb-2 grid grid-flow-col justify-self-start justify-items-start"><IconCheckbox className=' me-2 self-center'/><p>£200 one time fee to add a content management interface</p></li>
                     </ul>
                 </div>
                 <div className="">
@@ -33,16 +33,16 @@ export default function Pricing({ option }) {
                 <div className="">
                     <h3 className="text-3xl font-medium text-white uppercase mb-4 ">Monthly</h3>
                     <ul className="">
-                        <li className="pb-2 grid grid-flow-col justify-self-start"><IconCheckbox className=' me-2 self-center'/><p>Professional Custom Figma Design</p></li>
-                        <li className="pb-2 grid grid-flow-col justify-self-start"><IconCheckbox className=' me-2 self-center'/><p>A design you like or your money back</p></li>
-                        <li className="pb-2 grid grid-flow-col justify-self-start"><IconCheckbox className=' me-2 self-center'/><p>Hand Developed in the UK</p></li>
-                        <li className="pb-2 grid grid-flow-col justify-self-start"><IconCheckbox className=' me-2 self-center'/><p>Lifetime Priority Support</p></li>
-                        <li className="pb-2 grid grid-flow-col justify-self-start"><IconCheckbox className=' me-2 self-center'/><p className="font-bold">Unlimited Updates of Any Complexity</p></li>
-                        <li className="pb-2 grid grid-flow-col justify-self-start"><IconCheckbox className=' me-2 self-center'/><p>SEO Optimised proofread copywriting</p></li>
-                        <li className="pb-2 grid grid-flow-col justify-self-start"><IconCheckbox className=' me-2 self-center'/><p>Hosting Included</p></li>
-                        <li className="pb-2 grid grid-flow-col justify-self-start"><IconCheckbox className=' me-2 self-center'/><p>A Commitment to always keep your website secure, up-to-date, and running smoothly.</p></li>
-                        <li className="pb-2 grid grid-flow-col justify-self-start"><IconCheckbox className=' me-2 self-center'/><p>£50 one time fee per page after #6</p></li>
-                        <li className="pb-2 grid grid-flow-col justify-self-start"><IconCheckbox className=' me-2 self-center'/><p>£200 one time fee to add a content management interface</p></li>
+                        <li className="pb-2 grid grid-flow-col justify-self-start justify-items-start"><IconCheckbox className=' me-2 self-center'/><p>Professional Custom Figma Design</p></li>
+                        <li className="pb-2 grid grid-flow-col justify-self-start justify-items-start"><IconCheckbox className=' me-2 self-center'/><p>A design you like or your money back</p></li>
+                        <li className="pb-2 grid grid-flow-col justify-self-start justify-items-start"><IconCheckbox className=' me-2 self-center'/><p>Hand Developed in the UK</p></li>
+                        <li className="pb-2 grid grid-flow-col justify-self-start justify-items-start"><IconCheckbox className=' me-2 self-center'/><p>Lifetime Priority Support</p></li>
+                        <li className="pb-2 grid grid-flow-col justify-self-start justify-items-start"><IconCheckbox className=' me-2 self-center'/><p className="font-bold">Unlimited Updates of Any Complexity</p></li>
+                        <li className="pb-2 grid grid-flow-col justify-self-start justify-items-start"><IconCheckbox className=' me-2 self-center'/><p>SEO Optimised proofread copywriting</p></li>
+                        <li className="pb-2 grid grid-flow-col justify-self-start justify-items-start"><IconCheckbox className=' me-2 self-center'/><p>Hosting Included</p></li>
+                        <li className="pb-2 grid grid-flow-col justify-self-start justify-items-start"><IconCheckbox className=' me-2 self-center'/><p>A Commitment to always keep your website secure, up-to-date, and running smoothly.</p></li>
+                        <li className="pb-2 grid grid-flow-col justify-self-start justify-items-start"><IconCheckbox className=' me-2 self-center'/><p>£50 one time fee per page after #6</p></li>
+                        <li className="pb-2 grid grid-flow-col justify-self-start justify-items-start"><IconCheckbox className=' me-2 self-center'/><p>£200 one time fee to add a content management interface</p></li>
                     </ul>
                 </div>
                 <div className="">
