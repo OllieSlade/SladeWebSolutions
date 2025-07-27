@@ -6,7 +6,7 @@ export default function Header() {
             <div className="container mx-auto px-5 mt-8 md:mt-10">
                 <div className="flex flex-col">
                     <h1 className="md:w-9/12 text-5xl md:text-6xl mb-5 font-medium text-white"><span className="text-accentOrange font-semibold">Contact us below</span> and we’ll get back to you within 1 day.</h1>
-                    <p className="md:w-9/12 md:text-2xl text-xl md:mb-4">Or you can email directly via<A href="mailto:enquiries@sladewebsolutions.com" text="enquiries@sladewebsolutions.com" />and call/whatsapp (no text) via<A href="tel:+447356213500" text="07356 213500" /></p>
+                    <p className="md:w-9/12 md:text-2xl text-xl md:mb-4 wrap-break-word">Or you can email directly via <A href="mailto:enquiries@sladewebsolutions.com" text="enquiries@sladewebsolutions.com" /> and call/whatsapp (no text) via<A href="tel:+447356213500" text="07356 213500" /></p>
                 </div>
             </div>
 
