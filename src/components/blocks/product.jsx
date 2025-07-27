@@ -7,7 +7,7 @@ export default function Pricing({ option }) {
             <div className="bg-lightBlack py-10 px-6 flex flex-col rounded-lg justify-between rotateShadow">
                 <div className="">
                     <h3 className="text-3xl font-medium text-white uppercase mb-4">Upfront</h3>
-                    <ul className="">
+                    <ul className="text-left">
                         <li className="pb-2 grid grid-flow-col justify-self-start justify-items-start"><IconCheckbox className=' me-2 self-center'/><p>Professional Custom Figma Design</p></li>
                         <li className="pb-2 grid grid-flow-col justify-self-start justify-items-start"><IconCheckbox className=' me-2 self-center'/><p>A design you like or your money back</p></li>
                         <li className="pb-2 grid grid-flow-col justify-self-start justify-items-start"><IconCheckbox className=' me-2 self-center'/><p>Hand Developed in the UK</p></li>
@@ -31,8 +31,8 @@ export default function Pricing({ option }) {
         return (
             <div className="bg-lightBlack py-10 px-6 flex flex-col rounded-lg justify-between ">
                 <div className="">
-                    <h3 className="text-3xl font-medium text-white uppercase mb-4 ">Monthly</h3>
-                    <ul className="">
+                    <h3 className="text-3xl font-medium text-white uppercase mb-4">Monthly</h3>
+                    <ul className="text-left">
                         <li className="pb-2 grid grid-flow-col justify-self-start justify-items-start"><IconCheckbox className=' me-2 self-center'/><p>Professional Custom Figma Design</p></li>
                         <li className="pb-2 grid grid-flow-col justify-self-start justify-items-start"><IconCheckbox className=' me-2 self-center'/><p>A design you like or your money back</p></li>
                         <li className="pb-2 grid grid-flow-col justify-self-start justify-items-start"><IconCheckbox className=' me-2 self-center'/><p>Hand Developed in the UK</p></li>
