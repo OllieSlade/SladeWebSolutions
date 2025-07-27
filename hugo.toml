@@ -1,4 +1,0 @@
-baseURL = 'https://sladewebsolutions.com/'
-languageCode = 'en-us'
-title = 'Slade Web Solutions'
-disableKinds = ['taxonomy', 'term']
