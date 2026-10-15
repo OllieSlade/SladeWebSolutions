@@ -1,6 +1,7 @@
 import pagespeed from '../assets/pagespeed.png';
 import jp from '../assets/jamespearson.png';
 import lawsons from '../assets/lawsonsbespokedecorating.png';
+import wicklodge from '../assets/wicklodge.png';
 import ProjectShow from '../components/blocks/projectShow.jsx';
 import Testimonial from '../components/blocks/testimonial.jsx';
 import WhyBlock from '../components/blocks/why.jsx';
@@ -37,7 +38,7 @@ export default function Header() {
 					<WhyBlock title="Fast Loading" icon={<IconBrandSpeedtest size="50"/>} href="/about">As every site is hand-coded we only include what is necessary ensuring fast loading times and a smooth user experience. This helps reduce bounce rates and improve SEO.</WhyBlock>
 					<WhyBlock title="Copywriting and SEO" icon={<IconSeo size="50"/>} href="/pricing">All the text on our sites is carefully checked by a professional proofreader for accuracy of spelling, grammar and punctuation, as well as for maximum impact on your site's search engine optimisation (SEO).</WhyBlock>
 					<WhyBlock title="Advanced Features" icon={<IconLoadBalancer size="50"/>} href="/contact">Need an advanced feature? No problem! Whether you need databasing, API integrations, or something else. We can do it. We can even help you with Custom Email addresses or setting up M365.</WhyBlock>
-					<WhyBlock title="Made in the UK" icon={<IconCurrencyPound size="50"/>} href="/about">All our websites are made by Developers based in the UK. No cheap overseas labour.</WhyBlock>
+					<WhyBlock title="Developed in the UK" icon={<IconCurrencyPound size="50"/>} href="/about">All our websites are coded by Developers based in the UK. No cheap overseas labour.</WhyBlock>
 				</div>
             </div>
         </div>
@@ -45,10 +46,10 @@ export default function Header() {
 	<div className="bg-lightBlack mt-16 md:mt-28 py-14">
 		<div className="container mx-auto px-5">
 			<h2 className="text-5xl pb-8 font-semibold text-center text-white">Our Most <span className="text-accentOrange font-bold">Recent Projects</span></h2>
-			<div className="grid auto-rows-auto gap-10 grid-cols-1 md:grid-cols-2 mt-4">
+			<div className="grid auto-rows-auto gap-10 grid-cols-1 md:grid-cols-3 mt-4">
+				<ProjectShow imageSrc={wicklodge} imageAlt="Wicklodge website, featuring a timeless design" projectName="The Wick Lodge Pub" projectLink="https://mppubgroup.co.uk" />
 				<ProjectShow imageSrc={jp} imageAlt="Off White paperlike journalism website featuring 4 large image buttons" projectName="James Pearson Journalism" projectLink="https://jameswpearson.com/"/>
 				<ProjectShow imageSrc={lawsons} imageAlt="Prior website I made, featuring a Burgundy and Gold colour scheme and background carousel" projectName="Lawson's Bespoke Decorating" projectLink="https://lawsonsbespokedecorating.com"/>
-				
 			</div>
 		</div>
 	</div>

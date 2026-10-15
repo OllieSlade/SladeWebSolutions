@@ -7,7 +7,7 @@ export default function Header() {
             <div className="container mx-auto px-5 mt-8 md:mt-10">
                 <div className="md:max-w-3/4">
                     <h1 className="text-5xl md:text-6xl mb-4 font-medium text-white">About <span className="text-accentOrange font-semibold">Us</span></h1>
-                    <p className="text-xl md:mb-4">We are a small startup Web Agency based in London/Colchester. The lead developer and founder, Ollie, is a Computer Science graduate from the University of Essex with a passion for all things Web Development. After a few colleagues asked for a custom website, which they were very pleased with, he decided to start up his own business helping small companies get the online presence they deserved, without breaking the bank.</p>
+                    <p className="text-xl md:mb-4">We are a small startup Web Agency based in London. The lead developer and founder, Ollie, is a Computer Science graduate from the University of Essex with a passion for all things Web Development. After a few colleagues asked for a custom website, which they were very pleased with, he decided to start up his own business helping small companies get the online presence they deserved, without breaking the bank.</p>
                 </div>
             </div>
 

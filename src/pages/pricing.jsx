@@ -17,6 +17,8 @@ export default function Header() {
                     <h1 className="md:w-9/12 text-5xl mb-5 font-medium "><span className="text-accentOrange font-semibold ">Which Package</span> do I need?</h1>
                     <p className="">If you would like a website with the intention of hosting it yourself, or not planning to change anything on it very frequently, the upfront package is probably the best option</p>
                     <p className="mt-5">If you would like us to handle everything, plan to update parts of the website fairly often, or are even a cash-strapped start-up simply not able to afford the upfront amount. Then the Monthly package is for you. You are required to stay subscribed for at least 12 months, although after that you can choose to leave and take your website with you.</p>
+                    <p className="mt-5">If you have a more complex requirement, or would like to discuss a custom package, please contact us and we will get back to you within 1 working day with details and a quote</p>
+                    <p className="mt-5">We also offer maintenance packages both for existing websites and for new projects. These are £50 per month for 3hrs, and £100 per month for 6hrs.</p>
                 </div>
             </div>
         </main>

@@ -4,7 +4,7 @@ export default function project({reviewText, reviewerName, companyName, year, co
             <p className="md:text-xl font-light">{reviewText}</p>
             <div className="justify-self-end">
                 <p className="font-semibold text-2xl uppercase pt-3">{reviewerName}</p>
-                <a target="_blank" className=" italic" href={companyLink}>{companyName}</a>
+                <a target="_blank" rel="noopener noreferrer" className="italic" href={companyLink}>{companyName}</a>
                 <p>{year}</p>
             </div>
         </div>
