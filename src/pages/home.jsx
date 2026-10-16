@@ -25,7 +25,7 @@ export default function Header() {
             <div className="mt-8 md:mt-28 flex flex-col">
                 <p className="text-left font-light text-md md:text-2xl uppercase pb-1">Affordable, Unique, 100% Hand-Coded</p>
                 <h1 className="text-left text-5xl md:text-7xl md:w-9/12 font-semibold text-white">Websites from the ground up, specifically for <span className=" text-accentOrange font-bold">your small business.</span></h1>
-				<p className="md:w-9/12 text-2xl md:text-4xl right-0 mt-16 md:mt-24 self-end mb-4 text-left">Locally made bespoke websites with <span className="text-accentBlue font-medium">superior page rankings</span>. Give your business that unique edge from £80/mo.</p>
+				<p className="md:w-9/12 text-2xl md:text-4xl right-0 mt-16 md:mt-24 self-end mb-4 text-left">Locally made bespoke websites with <span className="text-accentBlue font-medium">superior page rankings</span>. Give your business that unique edge from £150/mo.</p>
 				<Button href="/contact" text="Get Started Today" />
             </div>
         </div>
@@ -34,7 +34,7 @@ export default function Header() {
                 <h2 className="text-5xl text-center pb-10 font-semibold">Why <span className="text-accentOrange font-bold">Us?</span></h2>
 				<div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
 					<WhyBlock title="Mobile First" icon={<IconDeviceMobile size="50"/>} href="/pricing">According to Statcounter, over 60% of internet traffic is from mobile devices. This is why we prioritise mobile design to ensure your site looks and performs great on all devices.</WhyBlock>
-					<WhyBlock title="Extended Support" icon={<IconHeartHandshake size="50"/>} href="/pricing">With all packages you get access to a year of extended support, ensuring your website remains up-to-date and secure. Need to regularly update your site but can't afford an inhouse web developer? We also offer unlimited updates for a low monthly fee.</WhyBlock>
+					<WhyBlock title="Extended Support" icon={<IconHeartHandshake size="50"/>} href="/pricing">With all packages you get access to a year of extended support, ensuring your website remains running its best. Need to regularly update your site but can't afford an inhouse web developer? We also offer additional update capacity for a low monthly fee.</WhyBlock>
 					<WhyBlock title="Fast Loading" icon={<IconBrandSpeedtest size="50"/>} href="/about">As every site is hand-coded we only include what is necessary ensuring fast loading times and a smooth user experience. This helps reduce bounce rates and improve SEO.</WhyBlock>
 					<WhyBlock title="Copywriting and SEO" icon={<IconSeo size="50"/>} href="/pricing">All the text on our sites is carefully checked by a professional proofreader for accuracy of spelling, grammar and punctuation, as well as for maximum impact on your site's search engine optimisation (SEO).</WhyBlock>
 					<WhyBlock title="Advanced Features" icon={<IconLoadBalancer size="50"/>} href="/contact">Need an advanced feature? No problem! Whether you need databasing, API integrations, or something else. We can do it. We can even help you with Custom Email addresses or setting up M365.</WhyBlock>

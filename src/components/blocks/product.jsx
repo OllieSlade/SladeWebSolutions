@@ -7,15 +7,16 @@ export default function Pricing({ option }) {
             <div className="bg-lightBlack py-10 px-6 flex flex-col rounded-lg justify-between rotateShadow">
                 <div className="">
                     <h3 className="text-3xl font-medium text-white uppercase mb-4">Upfront</h3>
+                    <p>Price based on a standard 5 page website with no ecommerce or account management, and minimum user generated content.</p>
                     <ul className="flex flex-col gap-2">
                         <li className="flex gap-2"><IconCheckbox className='shrink-0'/><p>Professional Custom Figma Design</p></li>
                         <li className="flex gap-2"><IconCheckbox className='shrink-0'/><p>Approve the design before any payment made</p></li>
-                        <li className="flex gap-2"><IconCheckbox className='shrink-0'/><p>Lifetime Support</p></li>
                         <li className="flex gap-2"><IconCheckbox className='shrink-0'/><p>Hosting Includes all required maintainence to keep your website looking and performing its best</p></li>
-                        <li className="flex gap-2"><IconCheckbox className='shrink-0'/><p>Free domain when you host with us</p></li>
+                        <li className="flex gap-2"><IconCheckbox className='shrink-0'/><p>Free domain and domain management if required when you host with us</p></li>
                         <li className="flex gap-2"><IconCheckbox className='shrink-0'/><p>SEO Optimised proofread copywriting</p></li>
-                        <li className="flex gap-2"><IconCheckbox className='shrink-0'/><p>~£50 one time fee per page after #5</p></li>
-                        <li className="flex gap-2"><IconCheckbox className='shrink-0'/><p>~£100 - £500 one time fee to add a content management interface</p></li>
+                        <li className="flex gap-2"><IconCheckbox className='shrink-0'/><p>Get 3+ hrs of additional development time each month for updates from £50/month</p></li>
+                        <li className="flex gap-2"><IconCheckbox className='shrink-0'/><p>~£60 one time fee per page after #5</p></li>
+                        <li className="flex gap-2"><IconCheckbox className='shrink-0'/><p>~£100 - £300 one time fee to add a content management interface</p></li>
                     </ul>
                 </div>
                 <div className="">
@@ -34,16 +35,17 @@ export default function Pricing({ option }) {
                     <ul className="flex flex-col gap-2">
                         <li className="flex gap-2"><IconCheckbox className='shrink-0' /><p>Professional Custom Figma Design</p></li>
                         <li className="flex gap-2"><IconCheckbox className='shrink-0' /><p>Approve the design before any payment made</p></li>
-                        <li className="flex gap-2"><IconCheckbox className='shrink-0' /><p>Lifetime Support</p></li>
-                        <li className="flex gap-2"><IconCheckbox className='shrink-0' /><p>Free domain</p></li>
-                        <li className="flex gap-2"><IconCheckbox className='shrink-0' /><p>Includes 8hrs of development per month and priority response.</p></li>
+                        <li className="flex gap-2"><IconCheckbox className='shrink-0' /><p>Free domain and domain management if required</p></li>
+                        <li className="flex gap-2"><IconCheckbox className='shrink-0' /><p>Get the full website in the same time period as the upfront package, just spread the cost across a full year.</p></li>
+                        <li className="flex gap-2"><IconCheckbox className='shrink-0' /><p>Includes 6hrs of additional development per month for the duration of your contract and priority response.</p></li>
+                        <li className="flex gap-2"><IconCheckbox className='shrink-0' /><p>Includes hosting</p></li>
                         <li className="flex gap-2"><IconCheckbox className='shrink-0' /><p>SEO Optimised proofread copywriting</p></li>
                         <li className="flex gap-2"><IconCheckbox className='shrink-0' /><p>~£50 one time fee per page after #5</p></li>
                         <li className="flex gap-2"><IconCheckbox className='shrink-0' /><p>~£100 - £500 one time fee to add a content management interface</p></li>
                     </ul>
                 </div>
                 <div className="">
-                    <p className="text-2xl font-bold mt-4"><span className="text-accentBlue text-4xl">£150</span> per month</p>
+                    <p className="text-2xl font-bold mt-4"><span className="text-accentBlue text-4xl">£140</span> per month</p>
                         <p className="text-sm font-light">(Minimum 12 month commitment)</p>
                     <Link to="/contact" className="button mt-4">Get Started</Link>
                 </div>
